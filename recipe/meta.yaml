@@ -1,5 +1,5 @@
 {% set name = "git_root" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/jtilly/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 34d7edee2413d8c80700b2273ea75bb58162e65343e07e5b974742be5681003a
+  sha256: 36aeb4e48e182a7090fb9dfb062aba9e53f9d82c3e4ffeab922c270513ae4478
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
